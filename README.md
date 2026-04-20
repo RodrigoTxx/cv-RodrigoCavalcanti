@@ -188,6 +188,44 @@ npm run dev
 
 Open [localhost:5173](http://localhost:5173)
 
+### Run With Docker (Local Dev)
+
+```bash
+docker compose up --build
+```
+
+Open [localhost:5173](http://localhost:5173)
+
+Stop containers:
+
+```bash
+docker compose down
+```
+
+### Personalize This Fork As Your CV
+
+If you forked this project to use as your own resume/portfolio, start here:
+
+1. Update your profile data in `src/profile.ts`:
+  - `fullName`, `shortName`, `siteUrl`, `email`
+  - `socialLinks`, `sameAs`, `jobTitles`
+2. Update main home copy and project cards in `src/i18n.ts`
+3. Update your About page text (bio, timeline, FAQ) in `src/about-i18n.ts`
+4. Replace branding assets in `public/` (avatar, logos, OG images)
+5. Replace chatbot identity in `chatbot-prompt.txt` and `src/chatbot-i18n.ts`
+6. Review any remaining references from the original author:
+
+```bash
+rg -n "santifer|Santiago|santifer.io|hola@|hi@"
+```
+
+7. Validate and build:
+
+```bash
+npm run dev
+npm run build
+```
+
 ### Environment Variables
 
 ```bash

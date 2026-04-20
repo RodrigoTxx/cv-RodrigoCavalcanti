@@ -1,15 +1,15 @@
 export const seo = {
   es: {
     title:
-      'santifer | Applied AI Operator · Builder of Career-Ops',
+      'Rodrigo Cavalcanti | Portafolio de IA y Producto',
     description:
-      'Applied AI Operator que lleva IA a producción. Creador de Career-Ops (36.2K+ ⭐). De operar un negocio durante 16 años a herramientas open source usadas por miles.',
+      'Portfolio interactivo de Rodrigo Cavalcanti. Experiencia, proyectos y habilidades en IA aplicada, producto e ingenieria.',
   },
   en: {
     title:
-      'santifer | Applied AI Operator · Builder of Career-Ops',
+      'Rodrigo Cavalcanti | AI and Product Portfolio',
     description:
-      'Applied AI Operator shipping AI at scale. Creator of Career-Ops (36.2K+ ⭐). From 16 years operating a business to open source tools used by thousands.',
+      'Interactive portfolio by Rodrigo Cavalcanti with experience, projects, and applied AI/product engineering skills.',
   },
 };
 
@@ -18,7 +18,7 @@ export const translations = {
     greeting: 'que lleva IA a producción',
     greetingRoles: ['Open Source Builder', 'Applied AI Operator', 'Creador de career-ops'],
     pillLabels: ['Builder', 'Applied AI Operator'],
-    email: 'hola@santifer.io',
+    email: 'rodrigo@example.com',
     role: '',
     story: {
       context: '+15 años construyendo+ todo desde cero.',
@@ -149,7 +149,7 @@ export const translations = {
     },
     projects: {
       title: 'Proyectos',
-      githubLink: 'github.com/santifer',
+      githubLink: 'github.com/rodrigocavalcanti',
       viewCode: 'Ver código',
       viewPrototype: 'Ver prototipo',
       agentInfra: {
@@ -172,7 +172,7 @@ export const translations = {
           badgeBuilding: 'En desarrollo',
           desc: 'Servicio Python + FastAPI para ingestión de contenido con LLM y generación de resúmenes. Prototipo ganador, ahora en producción con mejores prácticas empresariales.',
           tech: ['Python', 'FastAPI', 'OpenAI API', 'LLMOps'],
-          link: 'contentdigest.santifer.io',
+          link: 'rodrigocavalcanti.dev',
         },
         {
           title: 'Life OS',
@@ -188,19 +188,19 @@ export const translations = {
           badgeBuilding: '',
           desc: 'Pipeline HITL de búsqueda de empleo: la IA evalúa ofertas periódicamente en 10 dimensiones (scoring A-F), genera CVs PDF optimizados para ATS por oferta, y pre-rellena aplicaciones — yo reviso, filtro y decido cuáles enviar. Procesamiento batch de 48+ ofertas en paralelo (arquitectura conductor + workers), escaneo de portales con deduplicación, y framing adaptativo por arquetipo de rol. Integrado con **Life OS** como skill especializado.',
           tech: ['Claude Code', 'Batch Architecture', 'WebSearch', 'HITL Design'],
-          link: 'github.com/santifer/career-ops',
+          link: 'github.com/rodrigocavalcanti/career-ops',
           stars: '36.2K',
           forks: '7.3K',
           caseStudyUrl: '/career-ops',
           caseStudyLabel: 'Leer: AI Job Search multi-agente',
         },
         {
-          title: 'santifer.io',
+          title: 'rodrigocavalcanti.dev',
           badge: 'Este Portfolio',
           badgeBuilding: '',
           desc: 'CV interactivo con SDLC aumentado con IA. Construido con **Claudeable**, monitorizado con **Claude Pulse**, animaciones debuggeadas con **Claude Eye**. Prerender SSR, i18n bilingüe y SEO automatizado.',
           tech: ['React 19', 'TypeScript', 'Tailwind', 'Vite', 'Motion', 'Vercel'],
-          link: 'github.com/santifer/cv-santiago',
+          link: 'github.com/rodrigocavalcanti/cv-RodrigoCavalcanti',
           stars: '379',
           forks: '152',
         },
@@ -253,7 +253,7 @@ export const translations = {
           badgeBuilding: '',
           desc: 'Dashboard de predicción de riesgos para portfolios de proyectos. Modelo ML entrenado con datos sintéticos detecta retrasos antes de que ocurran. Segundo capstone del bootcamp de AI PM de Maven (Marily Nika).',
           tech: ['scikit-learn', 'FastAPI', 'React', 'TypeScript'],
-          link: 'projectos-predict.santifer.io',
+          link: 'projectos-predict.rodrigocavalcanti.dev',
         },
       ],
       saPlaybook: {

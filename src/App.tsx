@@ -332,7 +332,7 @@ function HomeToc({ lang }: { lang: Lang }) {
     const top = isLast
       ? document.documentElement.scrollHeight - window.innerHeight
       : el.getBoundingClientRect().top + window.scrollY - 96
-    requestAnimationFrame(() => { window.scrollTo({ top, behavior: 'instant' }) })
+    requestAnimationFrame(() => { window.scrollTo({ top, behavior: 'auto' }) })
   }, [])
 
   const activeIdx = HOME_TOC_SECTIONS.findIndex(s => s.id === activeId)
@@ -2102,17 +2102,37 @@ function App() {
 
             // Separar proyectos
             const allProjects = t.projects.items as readonly Project[]
-            const contentDigest = allProjects.find(p => p.title === 'Content Digest')!
-            const lifeOS = allProjects.find(p => p.title === 'Life OS')!
-            const careerOps = allProjects.find(p => p.title === 'Career Ops')!
-            const santiferIo = allProjects.find(p => p.title === 'santifer.io')!
-            const selfHealingChatbot = allProjects.find(p => p.title === 'Self-Healing Chatbot')!
-            // Tools que dependen de santifer.io
-            const claudeEye = allProjects.find(p => p.title === 'Claude Eye')!
-            const claudeable = allProjects.find(p => p.title === 'Claudeable')!
-            // Fila 4: Claude Pulse + ProjectOS Predict
-            const claudePulse = allProjects.find(p => p.title === 'Claude Pulse')!
-            const projectOSPredict = allProjects.find(p => p.title === 'ProjectOS Predict')!
+
+            const emptyProject = (title: string): Project => ({
+              title,
+              badge: '',
+              badgeBuilding: '',
+              desc: '',
+              tech: [],
+              link: '',
+            })
+
+            const getProject = (name: string, matcher: (p: Project) => boolean): Project => {
+              const project = allProjects.find(matcher)
+              if (!project) {
+                console.warn(`[projects] Missing project: ${name}`)
+                return emptyProject(name)
+              }
+              return project
+            }
+
+            const contentDigest = getProject('Content Digest', p => p.title === 'Content Digest')
+            const lifeOS = getProject('Life OS', p => p.title === 'Life OS')
+            const careerOps = getProject('Career Ops', p => p.title === 'Career Ops')
+            const portfolioProject = getProject(
+              'Portfolio',
+              p => p.badge.includes('Portfolio') || p.title === 'santifer.io' || p.title === 'rodrigocavalcanti.dev',
+            )
+            const selfHealingChatbot = getProject('Self-Healing Chatbot', p => p.title === 'Self-Healing Chatbot')
+            const claudeEye = getProject('Claude Eye', p => p.title === 'Claude Eye')
+            const claudeable = getProject('Claudeable', p => p.title === 'Claudeable')
+            const claudePulse = getProject('Claude Pulse', p => p.title === 'Claude Pulse')
+            const projectOSPredict = getProject('ProjectOS Predict', p => p.title === 'ProjectOS Predict')
 
             // Helper para parsear **bold** a elementos con estilo
             const parseBold = (text: string): React.ReactNode[] => {
@@ -2384,10 +2404,10 @@ function App() {
                   </AnimatedSection>
                 </div>
 
-                {/* Fila 2: santifer.io + Self-Healing Chatbot (highlight) */}
+                {/* Fila 2: Portfolio + Self-Healing Chatbot (highlight) */}
                 <div className="grid md:grid-cols-2 gap-6 mb-6 relative z-10">
                   <AnimatedSection delay={0.2}>
-                    <ProjectCard project={santiferIo} variant="highlight" cardRef={cardRefs.santiferIo} />
+                    <ProjectCard project={portfolioProject} variant="highlight" cardRef={cardRefs.santiferIo} />
                   </AnimatedSection>
                   <AnimatedSection delay={0.25}>
                     <ProjectCard project={selfHealingChatbot} variant="highlight" cardRef={cardRefs.selfHealingChatbot} />
