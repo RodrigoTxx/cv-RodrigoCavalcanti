@@ -54,7 +54,7 @@ const PERSON = {
     'https://dev.to/santifer',
     'https://santifer.substack.com',
     'https://contentdigest.santifer.io',
-    'https://www.youtube.com/@santifer_io',
+    'https://www.youtube.com/@rodrigo-cavalcantitx',
     'https://stackoverflow.com/users/32541743',
     'https://orcid.org/0009-0006-2192-7210',
     'https://www.crunchbase.com/person/santiago-fernandez-de-valderrama',
@@ -62,7 +62,7 @@ const PERSON = {
     'https://www.wikidata.org/wiki/Q138710224',
     'https://santiferirepair.es',
     'https://www.facebook.com/santifer.io/',
-    'https://www.producthunt.com/@santifer',
+    'https://www.producthunt.com/@rodrigo-cavalcantitx',
     'https://app.daily.dev/santifer',
   ],
 }

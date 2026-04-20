@@ -21,7 +21,7 @@ This is the core thesis behind Career-Ops: while companies deploy AI to reduce i
 - **Content Digest:** https://contentdigest.santifer.io
 - **Newsletter (Substack):** https://santifer.substack.com
 - **Facebook:** https://www.facebook.com/santifer.io/
-- **Product Hunt:** https://www.producthunt.com/@santifer
+- **Product Hunt:** https://www.producthunt.com/@rodrigo-cavalcantitx
 - **daily.dev:** https://app.daily.dev/santifer
 - **dev.to:** https://dev.to/santifer
 
