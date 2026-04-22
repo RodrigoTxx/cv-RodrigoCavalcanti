@@ -8,14 +8,12 @@ export const profile = {
   aboutPathEs: 'sobre-mi',
   aboutPathEn: 'about',
   socialLinks: [
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/rodrigocavalcanti' },
-    { name: 'GitHub', url: 'https://github.com/rodrigocavalcanti' },
-    { name: 'X / Twitter', url: 'https://x.com/rodrigocavalcanti' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/rodrigo-cavalcantitx' },
+    { name: 'GitHub', url: 'https://github.com/rodrigoTxx' },
   ],
   sameAs: [
-    'https://www.linkedin.com/in/rodrigocavalcanti',
-    'https://github.com/rodrigocavalcanti',
-    'https://x.com/rodrigocavalcanti',
+    'https://www.linkedin.com/in/rodrigo-cavalcantitx',
+    'https://github.com/rodrigoTxx',
   ],
   jobTitles: ['Software Engineer', 'AI Engineer', 'Product Builder'],
   city: 'Brasil',
