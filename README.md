@@ -294,15 +294,6 @@ MIT
 
 > Portfolio interactivo con chatbot IA (texto + voz), RAG agéntico, 71 evals automatizados, dashboard LLMOps y defensa anti-inyección en 6 capas
 
-[![Demo en vivo](https://img.shields.io/badge/demo-santifer.io-blue?style=flat-square)](https://santifer.io)
-
----
-
-<p align="center">
-  <img src="docs/hero.gif" alt="santifer.io en movimiento" width="100%" />
-</p>
-
----
 
 ## El Problema
 
