@@ -568,6 +568,7 @@ export const careerOpsContent = {
         heading: 'Here it is',
         body: 'Career-Ops is open source under MIT. Clone it, fork it, adapt it — it is yours.',
         ctaLabel: 'Try it on GitHub',
+        ctaHref: 'https://github.com/santifer/career-ops',
         communityHeading: 'Got questions? Ask the community',
         communityBody: '1,400+ builders already use Career-Ops and share tips, templates, and setups on Discord.',
         communityLabel: 'Join Discord',
