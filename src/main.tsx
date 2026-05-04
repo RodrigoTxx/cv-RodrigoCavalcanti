@@ -163,7 +163,7 @@ function NotFound() {
 const root = document.getElementById('root')!
 const app = (
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '') || undefined}>
       <ConditionalNav />
       <PageTransition>
         <Suspense fallback={null}>
