@@ -148,7 +148,7 @@ export default function JacoboAgent({ lang = 'en' }: { lang?: Lang }) {
 
       {/* Hero images */}
       <Photo2 editorId="hero-photos" items={[
-        { src: '/jacobo/santiago-headphones-thinking.webp', alt: 'Santiago Fernández de Valderrama', loading: 'eager', width: 360, height: 480 },
+        { src: '/jacobo/santiago-headphones-thinking.webp', alt: 'Rodrigo Cavalcanti', loading: 'eager', width: 360, height: 480 },
         { src: '/jacobo/shop-microsoldering-station.webp', alt: lang === 'es' ? 'Estación de microsoldadura en Santifer iRepair' : 'Microsoldering station at Santifer iRepair', loading: 'eager', width: 540, height: 720 },
       ]} caption={lang === 'es' ? 'Cada llamada interrumpe una reparación en curso: el técnico deja la microsoldadura para atender al teléfono' : 'Every call interrupts a repair in progress: the technician leaves the microsoldering station to answer the phone'} />
 

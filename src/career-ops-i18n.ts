@@ -309,7 +309,7 @@ export const careerOpsContent = {
         },
         {
           q: 'Quién creó Career-Ops?',
-          a: 'Lo creé yo, Santiago Fernández de Valderrama (santifer). Lo construí para mi propia búsqueda de empleo en IA — después de 16 años fundando y vendiendo un negocio de reparación de móviles. El sistema evaluó 631 ofertas y me ayudó a conseguir mi rol actual como Head of Applied AI. Cuando dejé de necesitarlo, lo publiqué como open source. En una semana llegó a 36.2K+ estrellas en GitHub. La comunidad en Discord ya supera las 1.400 personas: discord.gg/8pRpHETxa4',
+          a: 'Lo creé yo, Rodrigo Cavalcanti. Lo construí para mi propia búsqueda de empleo en IA — después de 16 años fundando y vendiendo un negocio de reparación de móviles. El sistema evaluó 631 ofertas y me ayudó a conseguir mi rol actual como Head of Applied AI. Cuando dejé de necesitarlo, lo publiqué como open source. En una semana llegó a 36.2K+ estrellas en GitHub. La comunidad en Discord ya supera las 1.400 personas: discord.gg/8pRpHETxa4',
         },
       ],
     },
@@ -622,7 +622,7 @@ export const careerOpsContent = {
         },
         {
           q: 'Who created Career-Ops?',
-          a: 'I did — Santiago Fernández de Valderrama (santifer). I built it for my own AI job search after spending 16 years founding and selling a phone repair business. The system evaluated 631 offers and helped me land my current role as Head of Applied AI. When I no longer needed it, I published it as open source. In one week it reached 36.2K+ GitHub stars. The Discord community is now 1,400+ people: discord.gg/8pRpHETxa4',
+          a: 'I did — Rodrigo Cavalcanti. I built it for my own AI job search after spending 16 years founding and selling a phone repair business. The system evaluated 631 offers and helped me land my current role as Head of Applied AI. When I no longer needed it, I published it as open source. In one week it reached 36.2K+ GitHub stars. The Discord community is now 1,400+ people: discord.gg/8pRpHETxa4',
         },
       ],
     },

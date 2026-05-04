@@ -102,7 +102,7 @@ export function ArticleHeader({
   dateISO,
   dateModifiedISO,
   readingTime,
-  authorName = 'Santiago Fernández de Valderrama',
+  authorName = 'Rodrigo Cavalcanti',
   authorUrl,
   authorBio,
   avatarSrc = '/foto-avatar-sm.webp',
@@ -195,13 +195,13 @@ export function ArticleFooter({ lang, utmCampaign }: ArticleFooterProps) {
       <div className="flex items-start gap-3 mb-6">
         <img
           src="/foto-avatar-sm.webp"
-          alt="Santiago Fernández de Valderrama"
+          alt="Rodrigo Cavalcanti"
           className="w-12 h-12 rounded-full shrink-0"
           width={48}
           height={48}
         />
         <div>
-          <p className="font-medium text-foreground">Santiago Fernández de Valderrama</p>
+          <p className="font-medium text-foreground">Rodrigo Cavalcanti</p>
           <p className="text-sm text-muted-foreground">
             {f.role}
             {' · '}{f.fellowAt}{' '}
@@ -234,7 +234,7 @@ export function ArticleFooter({ lang, utmCampaign }: ArticleFooterProps) {
         </a>
       </div>
       <div className="flex items-center gap-3 text-xs text-muted-foreground">
-        <span>&copy; {new Date().getFullYear()} Santiago Fernández de Valderrama. {f.copyright}</span>
+        <span>&copy; {new Date().getFullYear()} Rodrigo Cavalcanti. {f.copyright}</span>
         <span className="text-border">|</span>
         <Link to={lang === 'es' ? '/privacidad' : '/privacy'} className="hover:text-primary transition-colors">
           {lang === 'es' ? 'Privacidad' : 'Privacy'}

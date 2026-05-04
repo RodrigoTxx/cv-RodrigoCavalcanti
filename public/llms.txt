@@ -1,4 +1,4 @@
-# Santiago Fernández de Valderrama Aparicio
+# Rodrigo Cavalcanti | Applied AI Operator · Builder of Career-Ops
 
 > Applied AI Operator · Head of Applied AI · Creator of Career-Ops (36.2K+ ⭐)
 
@@ -226,7 +226,7 @@ Workshop on hyperautomation for SMEs: orchestration, RPA, AI and governance. Cas
 
 ## Languages
 
-- **Spanish:** Native
+- **Portuguese:** Native
 - **English:** Professional fluency
 
 ## What I'm Looking For

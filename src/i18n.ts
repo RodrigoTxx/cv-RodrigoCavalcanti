@@ -782,7 +782,7 @@ export const translations = {
     skills: {
       title: 'Competencias',
       languages: 'Idiomas',
-      spanish: 'Español',
+      portuguese: 'Portugués',
       native: 'Nativo',
       english: 'Inglés',
       professional: 'Profesional fluido',
@@ -1355,7 +1355,7 @@ export const translations = {
     skills: {
       title: 'Skills',
       languages: 'Languages',
-      spanish: 'Spanish',
+      portuguese: 'Portuguese',
       native: 'Native',
       english: 'English',
       professional: 'Professional proficiency',

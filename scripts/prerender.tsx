@@ -163,8 +163,8 @@ const aboutJsonLd = {
   mainEntity: {
     '@type': 'Person',
     '@id': 'https://santifer.io/#person',
-    name: 'Santiago Fernández de Valderrama Aparicio',
-    alternateName: ['Santiago Fernández de Valderrama', 'santifer', 'Santi'],
+    name: 'Rodrigo Cavalcanti',
+    alternateName: ['Rodrigo Cavalcanti', 'santifer', 'Santi'],
     url: 'https://santifer.io',
     image: 'https://santifer.io/foto-avatar.png',
     email: 'hola@santifer.io',

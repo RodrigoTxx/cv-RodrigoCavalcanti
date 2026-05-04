@@ -1507,7 +1507,7 @@ function App() {
                 {/* Inner border */}
                 <div className="absolute inset-2 rounded-full bg-gradient-theme-50 p-[2px]">
                   <div className="w-full h-full rounded-full overflow-hidden">
-                    <img src="/foto-avatar-sm.webp" srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.webp 384w" sizes="(max-width: 768px) 160px, 192px" alt="Santiago Fernández de Valderrama" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
+                    <img src="/foto-avatar-sm.webp" srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.webp 384w" sizes="(max-width: 768px) 160px, 192px" alt="Rodrigo Cavalcanti" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
                   </div>
                 </div>
               </div>
@@ -1904,7 +1904,7 @@ function App() {
               </h3>
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span>{t.skills.spanish}</span>
+                  <span>{t.skills.portuguese}</span>
                   <span className="text-sm text-primary font-medium">{t.skills.native}</span>
                 </div>
                 <div className="flex justify-between items-center">
@@ -1989,7 +1989,7 @@ function App() {
             </div>
           </AnimatedSection>
           <p className="mt-12 text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Santiago Fernández de Valderrama
+            &copy; {new Date().getFullYear()} Rodrigo Cavalcanti
             <span className="mx-2 text-border">|</span>
             <Link to={lang === 'es' ? '/privacidad' : '/privacy'} className="hover:text-primary transition-colors">
               {lang === 'es' ? 'Privacidad' : 'Privacy'}

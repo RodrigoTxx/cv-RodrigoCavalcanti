@@ -44,7 +44,7 @@ interface JsonLdOptions {
 const PERSON = {
   '@type': 'Person',
   '@id': 'https://santifer.io/#person',
-  name: 'Santiago Fernández de Valderrama Aparicio',
+  name: 'Rodrigo Cavalcanti',
   url: 'https://santifer.io',
   jobTitle: 'Head of Applied AI',
   sameAs: [
