@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodrigo Cavalcanti - Resume</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 10pt;
+      color: #1a1a1a;
+      background: #fff;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 30px 36px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      border-bottom: 2px solid #1d4ed8;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 24pt;
+      line-height: 1.05;
+      margin-bottom: 4px;
+    }
+
+    .subtitle {
+      font-size: 10.5pt;
+      color: #475569;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 9pt;
+      line-height: 1.6;
+      color: #334155;
+    }
+
+    .contact a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+
+    section { margin-bottom: 12px; }
+
+    h2 {
+      font-size: 9pt;
+      color: #1d4ed8;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      border-bottom: 1px solid #bfdbfe;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .summary { color: #374151; font-size: 9.6pt; }
+
+    .exp-item { margin-bottom: 8px; }
+
+    .exp-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    .role { font-weight: 700; font-size: 9.8pt; }
+    .period { font-size: 8.7pt; color: #64748b; white-space: nowrap; }
+    .meta { font-size: 9pt; color: #475569; font-style: italic; }
+
+    ul { margin: 3px 0 0 16px; }
+    li { margin-bottom: 1px; font-size: 9pt; color: #374151; }
+
+    .stack-line {
+      font-size: 9pt;
+      margin-bottom: 3px;
+      color: #334155;
+    }
+
+    .stack-line strong { color: #111827; }
+
+    .competencies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 14px;
+      margin-top: 5px;
+      font-size: 8.9pt;
+      color: #334155;
+    }
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 4px 10px;
+    }
+
+    .cert-item {
+      font-size: 8.7pt;
+      color: #1e40af;
+      text-decoration: none;
+      border: 1px solid #dbeafe;
+      background: #f8fbff;
+      border-radius: 4px;
+      padding: 3px 6px;
+      display: block;
+    }
+
+    .soft-skills {
+      font-size: 9pt;
+      color: #334155;
+    }
+
+    @media print {
+      .page { padding: 18px 20px; }
+      @page { size: A4; margin: 8mm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <h1>Rodrigo Cavalcanti</h1>
+        <div class="subtitle">Geo + AI Builder · Fullstack Engineer · Applied AI Operator</div>
+      </div>
+      <div class="contact">
+        <div>Brazil - Brasilia - DF / USA Remote</div>
+        <div><a href="https://www.linkedin.com/in/rodrigo-cavalcantitx" target="_blank" rel="noopener noreferrer">linkedin.com/in/rodrigo-cavalcantitx</a></div>
+        <div><a href="https://github.com/RodrigoTxx" target="_blank" rel="noopener noreferrer">github.com/RodrigoTxx</a></div>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Founder and product builder focused on AI-powered automation and no/low-code platforms.
+        End-to-end ownership across discovery, prioritization, delivery and adoption.
+        Strong delivery across geospatial platforms, RAG assistants, engineering automation, and enterprise integrations.
+      </p>
+    </section>
+
+    <section>
+      <h2>Work Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">Senior Fullstack Developer (Geo + AI)</div><div class="period">03/2025 - Present</div></div>
+        <div class="meta">Hex360 · Brazil</div>
+        <ul>
+          <li>Leading delivery across Skynet and Agro geospatial products with Nuxt 3, Vue.js, and Django/Python.</li>
+          <li>Migrated the complete platform to Keycloak, strengthening enterprise-grade security and IAM standards.</li>
+          <li>Implemented 3D model rendering on interactive maps with advanced geospatial visualization.</li>
+          <li>Built the PEA report pipeline integrating INMET/CONAB data sources with NDVI history for agricultural analysis.</li>
+          <li>Constructed a RAG assistant connected to internal databases, official APIs, and Agro MCP for customer chat workflows.</li>
+          <li>Architected alert and automation systems for agricultural area monitoring with geospatial precision.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">Developer Analyst</div><div class="period">07/2024 - 12/2024</div></div>
+        <div class="meta">Incript - Detran-DF Portal and Caixa Contracts Project · Brazil</div>
+        <ul>
+          <li>Designed and developed the CAIXA contracts system with collaborative editing based on Etherpad.</li>
+          <li>Handled setup, integration, database migration, and front-end customization.</li>
+          <li>Implemented simultaneous contract editing with chat and full change logs by user and timestamp.</li>
+          <li>Improved interoperability and delivered intuitive, responsive interfaces for the Detran/DF portal.</li>
+          <li>Specified and implemented TEI (Smart Vehicle Transfer) with gov.br SSO and digital signature flow.</li>
+          <li>Specified automatic document extraction from Detran API to remove manual uploads by end users.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">Developer Analyst</div><div class="period">04/2024 - 06/2024</div></div>
+        <div class="meta">Holygang &amp; Cozybed · Brazil</div>
+        <ul>
+          <li>Built Shopify stores for Holygang and Cozybedhome brands.</li>
+          <li>Developed and deployed a floating WhatsApp button plugin with personalized messaging.</li>
+          <li>Automated banners, promotional bundles, new products, and gift card workflows.</li>
+          <li>Integrated the online store with Instagram product tagging end-to-end.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">Developer Analyst</div><div class="period">08/2022 - 04/2024</div></div>
+        <div class="meta">GEAP Health · Brazil</div>
+        <ul>
+          <li>Led migration from ASP to Vue.js + Quasar with .NET Core APIs and fully responsive layouts.</li>
+          <li>Managed intranet, internet, portal, and blog properties with WordPress and PHP.</li>
+          <li>Updated beneficiary portal UI with Bootstrap and customized Power BI visuals.</li>
+          <li>Supported multiple squads on responsive UX, backlog management, and SCRUM ceremonies.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">Full Stack Developer Analyst</div><div class="period">Ongoing Portfolio</div></div>
+        <div class="meta">Rodrigo Cavalcanti · Brazil</div>
+        <ul>
+          <li>Personal front-end projects and interface experimentation.</li>
+          <li>Continuous hands-on prototyping and technical evolution.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">IT Coordinator</div><div class="period">07/2019 - 08/2021</div></div>
+        <div class="meta">SAGA Education Institution · Brazil</div>
+        <ul>
+          <li>Coordinated 1st and 2nd level support operations with SLA tracking.</li>
+          <li>Handled internal and external incident analysis and vendor ticket monitoring.</li>
+          <li>Managed AD, Exchange, Windows Server, DNS, VPN, Fortigate firewall, and remote systems.</li>
+          <li>Produced technical documentation and internal knowledge transfer.</li>
+          <li>Maintained security backups and firewall rules for access and network governance.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head"><div class="role">Project Lead / Developer</div><div class="period">07/2014 - 05/2019</div></div>
+        <div class="meta">Hexen Information Technology LTDA · Brazil</div>
+        <ul>
+          <li>Led R&amp;D for learning-object templates and engines across devices and media.</li>
+          <li>Coordinated developers, designers, and QA using SCRUM sprints.</li>
+          <li>Created animations and videos with After Effects and Camtasia.</li>
+          <li>Built and executed test cases across platforms and digital book environments.</li>
+          <li>Developed with ASP, HTML5, CSS3, JavaScript, and maintained SQL Server scripts.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="stack-line"><strong>Frontend:</strong> Angular, React, Vue.js, Nuxt 3, Quasar, Tailwind CSS, Bootstrap, TypeScript, JavaScript, UI/UX</div>
+      <div class="stack-line"><strong>Backend:</strong> Node.js, PHP, Python, Django, Java, Spring Boot, REST API, Microservices, WordPress</div>
+      <div class="stack-line"><strong>DevOps / Infra:</strong> Docker, Kubernetes, CI/CD, GitLab CI</div>
+      <div class="stack-line"><strong>Security &amp; IAM:</strong> Cyber Security, Keycloak</div>
+      <div class="stack-line"><strong>Geo &amp; AI:</strong> Geospatial Processing, Satellite Imagery, GeoServer, MCP, RAG</div>
+      <div class="stack-line"><strong>Languages:</strong> Portuguese (Native), English (Professional proficiency)</div>
+      <div class="competencies">
+        <div>AI Product Discovery</div>
+        <div>Enterprise Solution Architecture</div>
+        <div>Agentic Workflows</div>
+        <div>LLMOps &amp; AI Governance</div>
+        <div>Forward-Deployed Delivery</div>
+        <div>AI Enablement &amp; Thought Leadership</div>
+      </div>
+      <div class="soft-skills" style="margin-top: 6px;"><strong>Soft Skills:</strong> Team management, Project management, Agile methodologies, Business analysis, Senior developer, Angular UI/UX</div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <a class="cert-item" href="https://verify.skilljar.com/c/5vimtwpuwh3s" target="_blank" rel="noopener noreferrer">2026 · Claude with Amazon Bedrock (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/j48twez7kndf" target="_blank" rel="noopener noreferrer">2026 · Claude with Google Cloud's Vertex AI (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/76nxdo9phc6h" target="_blank" rel="noopener noreferrer">2026 · Building with the Claude API (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/kstgrc684m5w" target="_blank" rel="noopener noreferrer">2026 · AI Capabilities and Limitations (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/upijqqsu8xoa" target="_blank" rel="noopener noreferrer">2026 · Introduction to subagents (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/8dyhst24m39w" target="_blank" rel="noopener noreferrer">2026 · Introduction to agent skills (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/bn7rbmfa78wo" target="_blank" rel="noopener noreferrer">2026 · Model Context Protocol: Advanced Topics (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/82y8par7vhz3" target="_blank" rel="noopener noreferrer">2026 · Introduction to Model Context Protocol (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/m2yncjxre2m9" target="_blank" rel="noopener noreferrer">2026 · Teaching AI Fluency (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/df79aamtx7j9" target="_blank" rel="noopener noreferrer">2026 · AI Fluency for nonprofits (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/dpsb8hu8ejm4" target="_blank" rel="noopener noreferrer">2026 · AI Fluency for educators (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/uh2n6th4tyzb" target="_blank" rel="noopener noreferrer">2026 · AI Fluency for students (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/xksms2mcmr4i" target="_blank" rel="noopener noreferrer">2026 · AI Fluency: Framework &amp; Foundations (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/t5u8dpaiczyu" target="_blank" rel="noopener noreferrer">2026 · Claude Code in Action (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/4viecujgqzhc" target="_blank" rel="noopener noreferrer">2026 · Introduction to Claude Cowork (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/yewo3wjwmubm" target="_blank" rel="noopener noreferrer">2026 · Claude Code 101 (Anthropic)</a>
+        <a class="cert-item" href="https://verify.skilljar.com/c/bqd7h6rq5btq" target="_blank" rel="noopener noreferrer">2026 · Claude 101 (Anthropic)</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="summary">Postgraduate - Fullstack Development, Universidade Estacio de Sa</div>
+      <div class="summary">Undergraduate - Cyber Security, Universidade Estacio de Sa</div>
+    </section>
+  </div>
+</body>
+</html>
