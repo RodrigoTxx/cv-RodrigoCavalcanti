@@ -1,13 +1,7 @@
-# santifer.io
 
 **[:gb: English](#the-problem)** | **[:es: Español](#es-versión-en-español)**
 
 > Interactive portfolio with AI chatbot (text + voice), agentic RAG, 71 automated evals, LLMOps dashboard, and 6-layer prompt injection defense
-
-[![Live Demo](https://img.shields.io/badge/demo-santifer.io-blue?style=flat-square)](https://santifer.io)
-[![Built with Claude Code](https://img.shields.io/badge/built%20with-Claude%20Code-blueviolet?style=flat-square)](https://claude.ai/code)
-
----
 
 <p align="center">
   <img src="docs/hero.gif" alt="santifer.io in motion" width="100%" />
