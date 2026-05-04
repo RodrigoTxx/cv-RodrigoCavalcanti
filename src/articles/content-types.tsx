@@ -1211,7 +1211,7 @@ export function FloatingToc({ ctas }: { ctas?: TocCta[] } = {}) {
     const top = el.getBoundingClientRect().top + window.scrollY - 96
     setTocOpen(false)
     requestAnimationFrame(() => {
-      window.scrollTo({ top, behavior: 'instant' })
+      window.scrollTo({ top, behavior: 'auto' })
     })
   }, [])
 

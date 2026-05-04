@@ -802,7 +802,7 @@ export default function FloatingChat({ lang }: FloatingChatProps) {
                                       if (isCurrentPage && source.section_anchor) {
                                         const el = document.querySelector(source.section_anchor);
                                         if (el instanceof HTMLElement) {
-                                          el.scrollIntoView({ behavior: 'instant' });
+                                          el.scrollIntoView({ behavior: 'auto' });
                                           el.classList.remove('hash-highlight');
                                           void el.offsetWidth;
                                           el.classList.add('hash-highlight');

@@ -2,19 +2,9 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { MapPin, Mail, ExternalLink, Award, GraduationCap, Briefcase, ChevronRight, Clock, Newspaper, HelpCircle, Users } from 'lucide-react'
 import { aboutContent, type AboutLang } from './about-i18n'
+import { profile } from './profile'
 
-const SOCIAL_LINKS = [
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/santifer' },
-  { name: 'GitHub', url: 'https://github.com/santifer' },
-  { name: 'YouTube', url: 'https://www.youtube.com/@santifer_io' },
-  { name: 'X / Twitter', url: 'https://x.com/santifer' },
-  { name: 'Dev.to', url: 'https://dev.to/santifer' },
-  { name: 'Substack', url: 'https://santifer.substack.com' },
-  { name: 'Stack Overflow', url: 'https://stackoverflow.com/users/32541743' },
-  { name: 'ORCID', url: 'https://orcid.org/0009-0006-2192-7210' },
-  { name: 'Crunchbase', url: 'https://www.crunchbase.com/person/santiago-fernandez-de-valderrama' },
-  { name: 'Wikidata', url: 'https://www.wikidata.org/wiki/Q138710224' },
-]
+const SOCIAL_LINKS = profile.socialLinks
 
 export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
   const t = aboutContent[lang]
@@ -30,12 +20,12 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical) }
-    canonical.href = `https://santifer.io/${t.slug}`
+    canonical.href = `${profile.siteUrl}/${t.slug}`
 
     const hreflangs = [
-      { lang: 'es', href: 'https://santifer.io/sobre-mi' },
-      { lang: 'en', href: 'https://santifer.io/about' },
-      { lang: 'x-default', href: 'https://santifer.io/sobre-mi' },
+      { lang: 'es', href: `${profile.siteUrl}/${profile.aboutPathEs}` },
+      { lang: 'en', href: `${profile.siteUrl}/${profile.aboutPathEn}` },
+      { lang: 'x-default', href: `${profile.siteUrl}/${profile.aboutPathEs}` },
     ]
     document.querySelectorAll('link[hreflang]').forEach(el => el.remove())
     for (const hl of hreflangs) {
@@ -54,13 +44,13 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
       dateModified: '2026-04-19',
       mainEntity: {
         '@type': 'Person',
-        '@id': 'https://santifer.io/#person',
-        name: 'Santiago Fernández de Valderrama Aparicio',
-        alternateName: ['Santiago Fernández de Valderrama', 'santifer', 'Santi'],
-        url: 'https://santifer.io',
-        image: 'https://santifer.io/foto-avatar.png',
-        email: 'hola@santifer.io',
-        jobTitle: ['Head of Applied AI', 'AI Product Manager', 'Solutions Architect (No/Low-Code & AI)', 'AI Forward Deployed Engineer'],
+        '@id': `${profile.siteUrl}/#person`,
+        name: profile.fullName,
+        alternateName: [profile.shortName],
+        url: profile.siteUrl,
+        image: `${profile.siteUrl}/foto-avatar.png`,
+        email: profile.email,
+        jobTitle: profile.jobTitles,
         knowsAbout: [
           { '@type': 'Thing', name: 'Artificial Intelligence', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence' },
           { '@type': 'Thing', name: 'Machine Learning', url: 'https://en.wikipedia.org/wiki/Machine_learning' },
@@ -89,46 +79,8 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
           { '@type': 'EducationalOrganization', name: 'BIGSEO - Master en Inteligencia Artificial' },
           { '@type': 'EducationalOrganization', name: 'ETSI - Universidad de Sevilla' },
         ],
-        founder: {
-          '@type': 'Organization',
-          name: 'Santifer iRepair',
-          url: 'https://santiferirepair.es',
-          foundingDate: '2009',
-        },
-        sameAs: [
-          'https://www.linkedin.com/in/santifer',
-          'https://github.com/santifer',
-          'https://x.com/santifer',
-          'https://dev.to/santifer',
-          'https://santifer.substack.com',
-          'https://contentdigest.santifer.io',
-          'https://www.youtube.com/@santifer_io',
-          'https://stackoverflow.com/users/32541743',
-          'https://orcid.org/0009-0006-2192-7210',
-          'https://www.crunchbase.com/person/santiago-fernandez-de-valderrama',
-          'https://huggingface.co/santifer',
-          'https://www.wikidata.org/wiki/Q138710224',
-          'https://santiferirepair.es',
-          'https://www.facebook.com/santifer.io/',
-          'https://www.producthunt.com/@santifer',
-          'https://app.daily.dev/santifer',
-        ],
-        subjectOf: {
-          '@type': 'NewsArticle',
-          headline: 'Salir de compras: Una solución exprés para el teléfono',
-          publisher: { '@type': 'NewsMediaOrganization', name: 'Diario de Sevilla' },
-          datePublished: '2014-06-19',
-          url: 'https://www.diariodesevilla.es/vivirensevilla/Salir-compras-solucion-expres-telefono_0_817718799.html',
-        },
-        worksFor: {
-          '@type': 'Organization',
-          '@id': 'https://zinkee.com/#org',
-          name: 'Zinkee',
-          url: 'https://zinkee.com',
-          description: 'B2B SaaS platform building a horizontal AI layer for SMBs.',
-        },
-        award: 'AI Product Academy Bootcamp — Winning Project 2025 (Maven, led by Dr. Marily Nika, Google)',
-        address: { '@type': 'PostalAddress', addressLocality: 'Sevilla', addressCountry: 'ES' },
+        sameAs: profile.sameAs,
+        address: { '@type': 'PostalAddress', addressLocality: profile.city, addressCountry: profile.countryCode },
       },
     })
 
@@ -137,7 +89,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
     faqScript.textContent = JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
-      '@id': `https://santifer.io/${t.slug}/#faq`,
+      '@id': `${profile.siteUrl}/${t.slug}/#faq`,
       inLanguage: lang,
       mainEntity: t.faq.map(item => ({
         '@type': 'Question',
@@ -163,7 +115,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
             src="/foto-avatar-sm.webp"
             srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.webp 384w"
             sizes="96px"
-            alt="Santiago Fernández de Valderrama"
+            alt={profile.avatarAlt}
             className="w-24 h-24 rounded-full border-2 border-border shadow-lg"
             width={96}
             height={96}
@@ -187,7 +139,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
         </header>
 
         {/* Manifesto */}
-        <blockquote cite="https://santifer.io/career-ops" className="mb-10 border-l-4 border-primary pl-6 pr-4 py-3 text-xl md:text-2xl italic font-display leading-snug text-foreground/90">
+        <blockquote cite={profile.siteUrl} className="mb-10 border-l-4 border-primary pl-6 pr-4 py-3 text-xl md:text-2xl italic font-display leading-snug text-foreground/90">
           {t.manifesto}
         </blockquote>
 
@@ -397,7 +349,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
         {/* Footer */}
         <footer className="mt-8 text-center">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Santiago Fernández de Valderrama. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
+            &copy; {new Date().getFullYear()} {profile.fullName}. {lang === 'es' ? 'Todos los derechos reservados.' : 'All rights reserved.'}
           </p>
         </footer>
       </main>
