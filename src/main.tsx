@@ -1,6 +1,6 @@
 import { StrictMode, lazy, Suspense, useState, useEffect, useRef, Component, type ReactNode, type ComponentType } from 'react'
 import { hydrateRoot, createRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route, useLocation, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation, Link, Navigate } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import './index.css'
 import App from './App.tsx'
@@ -170,7 +170,7 @@ const app = (
       <PageTransition>
         <Suspense fallback={null}>
           <Routes>
-            <Route path="/" element={<App />} />
+            <Route path="/" element={<Navigate to="/en" replace />} />
             <Route path="/en" element={<App />} />
             <Route path="/ops" element={<OpsDashboard />} />
             <Route path="/sobre-mi" element={<AboutPage lang="es" />} />

@@ -113,7 +113,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
         <header className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-10">
           <img
             src="/foto-avatar-sm.webp"
-            srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.webp 384w"
+            srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.png 384w"
             sizes="96px"
             alt={profile.avatarAlt}
             className="w-24 h-24 rounded-full border-2 border-border shadow-lg"
