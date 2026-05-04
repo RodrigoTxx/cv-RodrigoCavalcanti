@@ -1507,7 +1507,7 @@ function App() {
                 {/* Inner border */}
                 <div className="absolute inset-2 rounded-full bg-gradient-theme-50 p-[2px]">
                   <div className="w-full h-full rounded-full overflow-hidden">
-                    <img src="/foto-avatar-sm.webp" srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.png 384w" sizes="(max-width: 768px) 160px, 192px" alt="Rodrigo Cavalcanti" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
+                    <img src="/foto-avatar2-sm.webp" srcSet="/foto-avatar2-sm.webp 192w, /foto-avatar2.png 384w" sizes="(max-width: 768px) 160px, 192px" alt="Rodrigo Cavalcanti" className="w-full h-full object-cover" width={192} height={192} fetchPriority="high" />
                   </div>
                 </div>
               </div>

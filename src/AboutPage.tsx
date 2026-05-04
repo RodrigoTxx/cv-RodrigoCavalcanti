@@ -48,7 +48,7 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
         name: profile.fullName,
         alternateName: [profile.shortName],
         url: profile.siteUrl,
-        image: `${profile.siteUrl}/foto-avatar.png`,
+        image: `${profile.siteUrl}/foto-avatar2.png`,
         email: profile.email,
         jobTitle: profile.jobTitles,
         knowsAbout: [
@@ -112,8 +112,8 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
         {/* Header */}
         <header className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-10">
           <img
-            src="/foto-avatar-sm.webp"
-            srcSet="/foto-avatar-sm.webp 192w, /foto-avatar.png 384w"
+            src="/foto-avatar2-sm.webp"
+            srcSet="/foto-avatar2-sm.webp 192w, /foto-avatar2.png 384w"
             sizes="96px"
             alt={profile.avatarAlt}
             className="w-24 h-24 rounded-full border-2 border-border shadow-lg"
