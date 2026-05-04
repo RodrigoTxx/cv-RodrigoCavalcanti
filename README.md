@@ -3,10 +3,6 @@
 
 > Interactive portfolio with AI chatbot (text + voice), agentic RAG, 71 automated evals, LLMOps dashboard, and 6-layer prompt injection defense
 
-<p align="center">
-  <img src="docs/hero.gif" alt="santifer.io in motion" width="100%" />
-</p>
-
 ---
 
 ## The Problem
