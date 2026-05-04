@@ -2027,7 +2027,6 @@ return records.map(r => ({
     resources: {
       heading: 'Resources',
       items: [
-        { label: 'Source code on GitHub (scripts, layouts, routes)', url: 'https://github.com/santifer/santifer-irepair' },
         { label: 'Santifer iRepair (the programmatic site)', url: 'https://santiferirepair.es' },
         { label: 'Case Study: The Business OS / ERP behind these pages', url: '/business-os-for-airtable' },
         { label: 'Astro, the static site framework', url: 'https://astro.build' },

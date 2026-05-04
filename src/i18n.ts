@@ -1024,7 +1024,7 @@ export const translations = {
           { icon: 'briefcase', name: 'applied-ai-ops', desc: 'Onboarding, codebase navigation, specs with AI for my role', tag: 'private' },
         ],
       },
-      githubLink: 'github.com/santifer',
+      githubLink: 'github.com/RodrigoTxx',
       viewCode: 'View code',
       viewPrototype: 'View prototype',
       items: [

@@ -205,7 +205,6 @@ const aboutJsonLd = {
     },
     sameAs: [
       'https://www.linkedin.com/in/santifer',
-      'https://github.com/santifer',
       'https://x.com/santifer',
       'https://dev.to/santifer',
       'https://santifer.substack.com',

@@ -49,7 +49,6 @@ const PERSON = {
   jobTitle: 'Head of Applied AI',
   sameAs: [
     'https://www.linkedin.com/in/santifer',
-    'https://github.com/santifer',
     'https://x.com/santifer',
     'https://dev.to/santifer',
     'https://santifer.substack.com',
