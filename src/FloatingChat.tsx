@@ -42,6 +42,8 @@ interface FloatingChatProps {
   lang: 'es' | 'en';
 }
 
+const CHAT_AVATAR_SRC = `${import.meta.env.BASE_URL}foto-avatar2-sm.png`;
+
 const PromptIcon = ({ icon }: { icon: string }) => {
   const icons = {
     briefcase: Briefcase,
@@ -589,9 +591,8 @@ export default function FloatingChat({ lang }: FloatingChatProps) {
             >
               {/* Avatar */}
               <picture>
-                <source srcSet="/foto-avatar2-sm.webp" type="image/webp" />
                 <img
-                  src="/foto-avatar2-sm.webp"
+                  src={CHAT_AVATAR_SRC}
                   alt={lang === 'en' ? 'Chat with Santi' : 'Chat con Santi'}
                   className="w-full h-full rounded-full object-cover"
                   width={56}
@@ -647,9 +648,8 @@ export default function FloatingChat({ lang }: FloatingChatProps) {
             >
               <div className="flex items-center gap-3">
                 <picture>
-                  <source srcSet="/foto-avatar2-sm.webp" type="image/webp" />
                   <img
-                    src="/foto-avatar2-sm.webp"
+                    src={CHAT_AVATAR_SRC}
                     alt="santifer avatar"
                     className="w-10 h-10 rounded-full object-cover ring-2 ring-primary/20"
                     width={40}

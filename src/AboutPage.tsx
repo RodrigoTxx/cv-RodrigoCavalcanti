@@ -5,6 +5,8 @@ import { aboutContent, type AboutLang } from './about-i18n'
 import { profile } from './profile'
 
 const SOCIAL_LINKS = profile.socialLinks
+const AVATAR_SM_SRC = `${import.meta.env.BASE_URL}foto-avatar2-sm.png`
+const AVATAR_SRC_SET = `${import.meta.env.BASE_URL}foto-avatar2-sm.png 192w, ${import.meta.env.BASE_URL}foto-avatar2.png 384w`
 
 export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
   const t = aboutContent[lang]
@@ -112,8 +114,8 @@ export default function AboutPage({ lang = 'es' }: { lang?: AboutLang }) {
         {/* Header */}
         <header className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-10">
           <img
-            src="/foto-avatar2-sm.webp"
-            srcSet="/foto-avatar2-sm.webp 192w, /foto-avatar2.png 384w"
+            src={AVATAR_SM_SRC}
+            srcSet={AVATAR_SRC_SET}
             sizes="96px"
             alt={profile.avatarAlt}
             className="w-24 h-24 rounded-full border-2 border-border shadow-lg"

@@ -86,6 +86,7 @@ interface ArticleHeaderProps {
 
 const MONTHS_ES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic']
 const MONTHS_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+const AVATAR_SM_SRC = `${import.meta.env.BASE_URL}foto-avatar2-sm.png`
 function formatDateHuman(iso: string, lang: 'es' | 'en'): string {
   const [y, m, d] = iso.split('-').map(Number)
   if (!y || !m || !d) return iso
@@ -105,7 +106,7 @@ export function ArticleHeader({
   authorName = 'Rodrigo Cavalcanti',
   authorUrl,
   authorBio,
-  avatarSrc = '/foto-avatar2-sm.webp',
+  avatarSrc = AVATAR_SM_SRC,
   lang,
 }: ArticleHeaderProps) {
   const resolvedAuthorUrl = authorUrl ?? (lang === 'es' ? '/sobre-mi' : '/about')
@@ -194,7 +195,7 @@ export function ArticleFooter({ lang, utmCampaign }: ArticleFooterProps) {
     <footer className="mt-16 pt-8 border-t border-border">
       <div className="flex items-start gap-3 mb-6">
         <img
-          src="/foto-avatar2-sm.webp"
+          src={AVATAR_SM_SRC}
           alt="Rodrigo Cavalcanti"
           className="w-12 h-12 rounded-full shrink-0"
           width={48}
