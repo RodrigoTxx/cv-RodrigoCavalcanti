@@ -291,11 +291,11 @@ function useTypewriterRotation(roles: readonly string[], { typeSpeed = 80, delet
 }
 
 const HOME_TOC_SECTIONS = [
-  { id: 'experience', es: 'Experiencia', en: 'Experience' },
-  { id: 'projects', es: 'Proyectos', en: 'Projects' },
-  { id: 'education', es: 'Formación', en: 'Education' },
-  { id: 'tech', es: 'Skills & Stack', en: 'Skills & Stack' },
-  { id: 'contact', es: 'Contacto', en: 'Contact' },
+  { id: 'experience', es: 'Experiencia', en: 'Experience', pt: 'Experiência' },
+  { id: 'projects', es: 'Proyectos', en: 'Projects', pt: 'Projetos' },
+  { id: 'education', es: 'Formación', en: 'Education', pt: 'Educação' },
+  { id: 'tech', es: 'Skills & Stack', en: 'Skills & Stack', pt: 'Skills & Stack' },
+  { id: 'contact', es: 'Contacto', en: 'Contact', pt: 'Contato' },
 ] as const
 
 function HomeToc({ lang }: { lang: Lang }) {

@@ -45,7 +45,7 @@ export { H2 as AnchorHeading } from './content-types'
 // Layout shells
 // ---------------------------------------------------------------------------
 
-export function ArticleLayout({ lang, children }: { lang?: 'es' | 'en'; children: React.ReactNode }) {
+export function ArticleLayout({ lang, children }: { lang?: 'pt' | 'es' | 'en'; children: React.ReactNode }) {
   useEffect(() => {
     if (lang) document.documentElement.lang = lang
   }, [lang])
