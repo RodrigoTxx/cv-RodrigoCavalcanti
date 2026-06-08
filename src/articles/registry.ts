@@ -594,15 +594,19 @@ export const articleRegistry: ArticleConfig[] = [
 export function getAltPaths(): Record<string, string> {
   const map: Record<string, string> = {
     '/': '/en',
-    '/en': '/',
+    '/en': '/pt',
+    '/pt': '/',
     '/sobre-mi': '/about',
-    '/about': '/sobre-mi',
+    '/about': '/pt/sobre-mim',
+    '/pt/sobre-mim': '/sobre-mi',
     '/privacidad': '/privacy',
-    '/privacy': '/privacidad',
+    '/privacy': '/pt/privacidade',
+    '/pt/privacidade': '/privacidad',
   }
   for (const article of articleRegistry) {
     map[`/${article.slugs.es}`] = `/${article.slugs.en}`
-    map[`/${article.slugs.en}`] = `/${article.slugs.es}`
+    map[`/${article.slugs.en}`] = `/pt/${article.slugs.es}`
+    map[`/pt/${article.slugs.es}`] = `/${article.slugs.es}`
   }
   return map
 }
@@ -611,12 +615,18 @@ export function getPageTitles(): Record<string, string> {
   const map: Record<string, string> = {
     '/': 'Portfolio de Santiago',
     '/en': "Santiago's Portfolio",
+    '/pt': 'Portfólio de Rodrigo',
     '/sobre-mi': 'Sobre Mí',
     '/about': 'About',
+    '/pt/sobre-mim': 'Sobre Mim',
+    '/privacidad': 'Política de Privacidad',
+    '/privacy': 'Privacy Policy',
+    '/pt/privacidade': 'Política de Privacidade',
   }
   for (const article of articleRegistry) {
     map[`/${article.slugs.es}`] = article.titles.es
     map[`/${article.slugs.en}`] = article.titles.en
+    map[`/pt/${article.slugs.es}`] = article.titles.es
   }
   return map
 }

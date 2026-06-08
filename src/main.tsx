@@ -170,13 +170,16 @@ const app = (
       <PageTransition>
         <Suspense fallback={null}>
           <Routes>
-            <Route path="/" element={<Navigate to="/en" replace />} />
+            <Route path="/" element={<App />} />
             <Route path="/en" element={<App />} />
+            <Route path="/pt" element={<App />} />
             <Route path="/ops" element={<OpsDashboard />} />
             <Route path="/sobre-mi" element={<AboutPage lang="es" />} />
             <Route path="/about" element={<AboutPage lang="en" />} />
+            <Route path="/pt/sobre-mim" element={<AboutPage lang="pt" />} />
             <Route path="/privacidad" element={<PrivacyPolicy lang="es" />} />
             <Route path="/privacy" element={<PrivacyPolicy lang="en" />} />
+            <Route path="/pt/privacidade" element={<PrivacyPolicy lang="pt" />} />
             {articleRegistry.map((article) => {
               const ArticleComponent = articleComponents[article.id]
               return [

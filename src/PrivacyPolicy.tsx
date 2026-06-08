@@ -95,6 +95,52 @@ const content = {
     ],
     backHome: 'Back to home',
   },
+  pt: {
+    title: 'Política de Privacidade',
+    lastUpdated: 'Última atualização: 15 de março de 2026',
+    intro: 'Esta política descreve como os dados são coletados e usados quando você visita santifer.io.',
+    sections: [
+      {
+        heading: 'Quais dados são coletados',
+        items: [
+          'Mensagens do chatbot: quando você interage com o chatbot "Santi", as mensagens são processadas para gerar respostas. Nenhuma informação pessoalmente identificável é solicitada ou armazenada.',
+          'Áudio do modo voz: se você ativar o modo voz, o áudio é processado em tempo real para a conversa e não é permanentemente armazenado.',
+          'Análise de uso: dados anônimos de navegação (páginas visitadas, duração, dispositivo) são coletados para melhorar o site.',
+        ],
+      },
+      {
+        heading: 'Como os dados são usados',
+        items: [
+          'As mensagens do chatbot são usadas exclusivamente para gerar respostas contextuais sobre a experiência profissional de Rodrigo.',
+          'Os rastreamentos de conversa são armazenados de forma anonimizada para melhorar a qualidade das respostas e detectar tentativas de uso indevido.',
+          'Os dados de análise são usados para entender padrões de uso e melhorar o desempenho do site.',
+        ],
+      },
+      {
+        heading: 'Terceiros',
+        items: [
+          'Anthropic (Claude): processa as mensagens do chatbot para gerar respostas.',
+          'OpenAI (Realtime API): processa o áudio do modo voz para conversa em tempo real.',
+          'Langfuse: armazena rastreamentos de conversa anonimizados para observabilidade e melhoria de qualidade.',
+          'Vercel: hospeda o website e coleta análise anônima de uso.',
+        ],
+      },
+      {
+        heading: 'Cookies e armazenamento local',
+        body: 'Este site não usa cookies de rastreamento ou cookies de terceiros. Apenas localStorage do navegador é usado para preferências de interface (tema visual). Nenhuma informação pessoal é armazenada.',
+      },
+      {
+        heading: 'Sem contas de usuário',
+        body: 'Este site não requer registro ou login. Nenhum nome, email ou senha é coletado através do website.',
+      },
+      {
+        heading: 'Contato',
+        body: 'Para qualquer dúvida relacionada à privacidade, você pode escrever para:',
+        email: 'hola@santifer.io',
+      },
+    ],
+    backHome: 'Voltar para o início',
+  },
 } as const
 
 interface PrivacySection {
@@ -104,7 +150,7 @@ interface PrivacySection {
   email?: string
 }
 
-export default function PrivacyPolicy({ lang = 'es' }: { lang?: 'es' | 'en' }) {
+export default function PrivacyPolicy({ lang = 'es' }: { lang?: 'pt' | 'es' | 'en' }) {
   const t = content[lang]
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-export type AboutLang = 'es' | 'en'
+export type AboutLang = 'pt' | 'es' | 'en'
 
 export const aboutContent = {
   es: {
@@ -117,6 +117,65 @@ export const aboutContent = {
       { q: 'Where can I see his work?', a: 'You can follow his work and updates on LinkedIn and GitHub, where he shares projects, code, and technical progress.' },
     ],
     connectHeading: 'Connect',
+    email: 'rodrigo@example.com',
+  },
+  pt: {
+    slug: 'sobre-mim',
+    altSlug: 'about',
+    seo: {
+      title: 'Rodrigo Cavalcanti | Perfil Profissional',
+      description: 'Perfil profissional de Rodrigo Cavalcanti com experiência, projetos e habilidades em software, produto e IA aplicada.',
+    },
+    heading: 'Rodrigo Cavalcanti',
+    manifesto: 'Construo produtos úteis, mensuráveis e prontos para produção.',
+    subtitle: 'Software Engineer · Product Builder · AI Enthusiast',
+    location: 'Brasil',
+    lastUpdated: 'Abril de 2026',
+    bio: [
+      'Engenheiro de software com foco em produtos digitais, automação e IA aplicada.',
+      'Experiência em construir soluções end-to-end, desde definição do problema até implementação e melhoria contínua.',
+      'Este portfólio resume minha trajetória, principais projetos e stack técnico.',
+    ],
+    seeking: '',
+    roles: [],
+    timelineHeading: 'Experiência',
+    timeline: [
+      { period: '2026 - Atual', role: 'Software Engineer (Geo + AI)', company: 'Hex360', desc: 'Plataformas geoespaciais, automação e soluções de IA aplicada' },
+      { period: '2017 - 2025', role: 'Product / Tech Builder', company: 'Projetos pessoais e consultoria', desc: 'Entrega end-to-end de produtos digitais com foco em impacto de negócio' },
+    ],
+    projectsHeading: 'Projetos',
+    projects: [
+      { name: 'Portfólio interativo', desc: 'Website multilíngue com foco em produto, engenharia e IA aplicada', href: '/pt' },
+      { name: 'Automação de processos', desc: 'Integrações e fluxos para reduzir trabalho manual e melhorar operações', href: '/pt' },
+      { name: 'Soluções fullstack', desc: 'Desenvolvimento end-to-end em frontend, backend, APIs e dados', href: '/pt' },
+    ],
+    certificationsHeading: 'Certificações',
+    certifications: [
+      { org: 'Anthropic', items: ['Claude Code in Action', 'Introduction to MCP', 'Advanced MCP Topics', 'Building with the Claude API', 'AI Fluency: Framework & Foundations', 'Teaching AI Fluency', 'AI Fluency for Educators', 'AI Fluency for Students'] },
+      { org: 'Airtable', items: ['AI App Builder', 'Builder Certification', 'Admin Certification'] },
+      { org: 'Make Academy', items: ['Make Advanced'] },
+    ],
+    educationHeading: 'Educação',
+    education: [
+      'Universidade Estácio de Sá — Pós-Graduação em Desenvolvimento Fullstack',
+      'Universidade Estácio de Sá — Bacharelado em Segurança da Informação',
+    ],
+    pressHeading: 'Imprensa',
+    press: [
+      { title: 'Perfil profissional no LinkedIn', publisher: 'LinkedIn', date: 'Atualizado', href: 'https://www.linkedin.com/in/rodrigo-cavalcantitx' },
+    ],
+    communityHeading: 'Comunidade',
+    community: [
+      { title: 'Perfil profissional', platform: 'LinkedIn', href: 'https://www.linkedin.com/in/rodrigo-cavalcantitx' },
+      { title: 'Código e projetos', platform: 'GitHub', href: 'https://github.com/rodrigoTxx' },
+    ],
+    faqHeading: 'Perguntas Frequentes',
+    faq: [
+      { q: 'Quem é Rodrigo Cavalcanti?', a: 'Rodrigo Cavalcanti é um engenheiro de software com experiência em desenvolvimento de produtos, automação e IA aplicada. Ele se concentra em construir soluções digitais end-to-end com resultados de negócio mensuráveis.' },
+      { q: 'Que tipo de projetos ele trabalha?', a: 'Ele trabalha em projetos de software e IA aplicada, incluindo automação de processos, integrações de sistemas, produtos web fullstack e iniciativas de eficiência operacional.' },
+      { q: 'Onde posso ver seu trabalho?', a: 'Você pode seguir seu trabalho e atualizações no LinkedIn e GitHub, onde compartilha projetos, código e progresso técnico.' },
+    ],
+    connectHeading: 'Conectar',
     email: 'rodrigo@example.com',
   },
 } as const
