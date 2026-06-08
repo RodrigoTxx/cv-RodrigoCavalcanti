@@ -74,8 +74,7 @@ function GlobalChat() {
 
   if (!hydrated || pathname.startsWith('/ops')) return null
 
-  const esSlugs = getEsSlugs()
-  const lang = esSlugs.has(pathname) ? 'es' : 'en'
+  const lang = pathname === '/en' ? 'en' : pathname === '/pt' ? 'pt' : pathname.startsWith('/pt/') ? 'pt' : pathname.startsWith('/en/') ? 'en' : 'es'
 
   return (
     <ChatErrorBoundary>

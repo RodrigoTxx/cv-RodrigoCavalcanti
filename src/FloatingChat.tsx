@@ -39,7 +39,7 @@ interface Message {
 }
 
 interface FloatingChatProps {
-  lang: 'es' | 'en';
+  lang: 'pt' | 'es' | 'en';
 }
 
 const CHAT_AVATAR_SRC = `${import.meta.env.BASE_URL}foto-avatar2-sm.png`;

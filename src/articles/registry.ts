@@ -640,11 +640,3 @@ export function getSectionLabels(): Record<string, Record<string, string>> {
   return map
 }
 
-/** All ES slugs (for lang detection: if pathname matches an ES slug → lang is 'es') */
-export function getEsSlugs(): Set<string> {
-  const slugs = new Set<string>(['/', '/privacidad', '/sobre-mi'])
-  for (const article of articleRegistry) {
-    slugs.add(`/${article.slugs.es}`)
-  }
-  return slugs
-}
