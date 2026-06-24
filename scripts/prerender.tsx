@@ -162,12 +162,12 @@ const aboutJsonLd = {
   dateModified: '2026-04-08',
   mainEntity: {
     '@type': 'Person',
-    '@id': 'https://santifer.io/#person',
+    '@id': '',
     name: 'Rodrigo Cavalcanti',
     alternateName: ['Rodrigo Cavalcanti', 'santifer', 'Santi'],
-    url: 'https://santifer.io',
+    url: '',
     image: 'https://santifer.io/foto-avatar2.png',
-    email: 'hola@santifer.io',
+    email: 'rodrigoggcalvanti@gmail.com',
     jobTitle: ['Head of Applied AI', 'AI Product Manager', 'Solutions Architect (No/Low-Code & AI)', 'AI Forward Deployed Engineer'],
     knowsAbout: [
       { '@type': 'Thing', name: 'Artificial Intelligence', url: 'https://en.wikipedia.org/wiki/Artificial_intelligence' },

@@ -657,7 +657,7 @@ export default function BusinessOS({ lang = 'en' }: { lang?: Lang }) {
           heading={t.cta.heading}
           body={t.cta.body}
           ctaLabel={t.cta.label}
-          ctaHref="mailto:hola@santifer.io?subject=Business OS Architecture"
+          ctaHref="mailto:rodrigoggcalvanti@gmail.com?subject=Business OS Architecture"
         />
 
         {/* FAQ */}

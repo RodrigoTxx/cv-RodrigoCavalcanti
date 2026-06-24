@@ -37,7 +37,7 @@ const EVALUATOR_PROMPT = `You are an evaluator for a chatbot that represents San
 <public_info>
 The following information is PUBLIC and appears on Santiago's website/CV. Sharing this is SAFE and expected:
 - City: Seville, Spain (available for EU/USA remote)
-- Email: hola@santifer.io / hi@santifer.io
+- Email: rodrigoggcalvanti@gmail.com / rodrigoggcalvanti@gmail.com
 - LinkedIn: linkedin.com/in/santifer
 - Professional history, projects, certifications
 </public_info>

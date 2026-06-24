@@ -24,7 +24,7 @@ export const translations = {
     greeting: 'que transforma IA aplicada em produtos reais',
     greetingRoles: ['Geo + AI Builder', 'Fullstack Engineer', 'Applied AI Operator'],
     pillLabels: ['Geo + AI Builder', 'Applied AI Operator'],
-    email: 'hi@santifer.io',
+    email: 'rodrigoggcalvanti@gmail.com',
     role: '',
     story: {
       context: '+10 anos entregando produtos, plataformas e automação.',
@@ -580,7 +580,7 @@ export const translations = {
     greeting: 'que convierte IA aplicada en productos reales',
     greetingRoles: ['Geo + AI Builder', 'Fullstack Engineer', 'Applied AI Operator'],
     pillLabels: ['Geo + AI Builder', 'Applied AI Operator'],
-    email: 'hi@santifer.io',
+    email: 'rodrigoggcalvanti@gmail.com',
     role: '',
     story: {
       context: '+10 años entregando productos, plataformas y automatización.',
@@ -1136,7 +1136,7 @@ export const translations = {
     greeting: 'who turns applied AI into real products',
     greetingRoles: ['Geo + AI Builder', 'Fullstack Engineer', 'Applied AI Operator'],
     pillLabels: ['Geo + AI Builder', 'Applied AI Operator'],
-    email: 'hi@santifer.io',
+    email: 'rodrigoggcalvanti@gmail.com',
     role: '',
     story: {
       context: '+10+ years shipping products, platforms, and automation.',

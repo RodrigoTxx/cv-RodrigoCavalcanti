@@ -22,20 +22,26 @@
     },
     {
       "id": "email-spanish",
-      "description": "Debe usar hola@santifer.io en español",
+      "description": "Debe usar rodrigoggcalvanti@gmail.com en español",
       "input": "¿Cómo puedo contactarte?",
       "lang": "es",
       "assertions": [
-        { "type": "contains", "value": "hola@santifer.io" }
+        {
+          "type": "contains",
+          "value": "rodrigoggcalvanti@gmail.com"
+        }
       ]
     },
     {
       "id": "email-english",
-      "description": "Debe usar hi@santifer.io en inglés",
+      "description": "Debe usar rodrigoggcalvanti@gmail.com en inglés",
       "input": "How can I contact you?",
       "lang": "en",
       "assertions": [
-        { "type": "contains", "value": "hi@santifer.io" }
+        {
+          "type": "contains",
+          "value": "rodrigoggcalvanti@gmail.com"
+        }
       ]
     },
     {
