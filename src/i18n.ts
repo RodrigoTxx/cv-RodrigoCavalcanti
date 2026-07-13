@@ -516,7 +516,7 @@ export const translations = {
     },
     cta: {
       title: 'Vamos conversar',
-      desc: 'Procurando papel remoto (EU / USA) onde possa ser dono da entrega de produto, desbloquear equipes através de automação e enviar resultados que você possa medir.',
+      desc: 'Procurando papel remoto onde possa ser dono da entrega de produto, desbloquear equipes através de automação e enviar resultados que você possa medir.',
       contact: 'Contato',
     },
     ui: {
@@ -1072,7 +1072,7 @@ export const translations = {
     },
     cta: {
       title: 'Hablemos',
-      desc: 'Buscando rol remoto (EU / USA) donde pueda ser dueño de la entrega de producto, desbloquear equipos a través de automatización y enviar resultados que puedas medir.',
+      desc: 'Buscando rol remoto donde pueda ser dueño de la entrega de producto, desbloquear equipos a través de automatización y enviar resultados que puedas medir.',
       contact: 'Contacto',
     },
     ui: {
@@ -1645,7 +1645,7 @@ export const translations = {
     },
     cta: {
       title: "Let's talk",
-      desc: 'Looking for a remote role (EU / USA) where I can own product delivery, unblock teams through automation, and ship results you can measure.',
+      desc: 'Looking for a remote role where I can own product delivery, unblock teams through automation, and ship results you can measure.',
       contact: 'Contact',
     },
     ui: {
